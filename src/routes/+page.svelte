@@ -46,7 +46,7 @@
 
     if (tracks[index].isSelected) {
       // Als het nummer geselecteerd is, voeg het toe aan de selectedTracks array
-      selectedTracks.push(tracks[index]);
+      selectedTracks = [...selectedTracks, tracks[index]];
     } else {
       // Als het nummer gedeselecteerd is, verwijder het uit de selectedTracks array
       selectedTracks = selectedTracks.filter(track => track.id !== tracks[index].id);
